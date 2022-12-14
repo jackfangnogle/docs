@@ -36,6 +36,9 @@ Sessions for Spot and Futures are separated.
 
 # Change Log
 
+## Version 1.1.1 (20th December 2022)
+
+* Add logon attribute: ApplyNewSymbol for Futures market [FIX API](#fix-api)
 
 ## Version 1.1.0 (6th December 2022)
 
@@ -124,7 +127,7 @@ Client's API Key and secret can be generated from API page in BTSE portal. Creat
 |  98 | EncryptMethod   | 0                 | Must be set to "0" (None) |
 | 108 | HeartBInt       | 30                | Must be set to "30"       |
 | 141 | ResetSeqNumFlag | Y                 | Must be set to "Y"        |
-
+| 5001 | ApplyNewSymbol | N                 | To specify symbol format for futures market. "N" (default) for old naming, ex: BTCPFC. "Y" for new naming, ex: BTC-PERP. |
 
 ## Heartbeat (0)
 
